@@ -1,0 +1,192 @@
+header { position: relative; }
+
+header .top-link { position: absolute; top: 8px; right: 15px; color: #fff; }
+
+header .links { display: flex; justify-content: space-around; background: #978c7a; }
+
+@media screen and (max-width: 768px) { header .links { display: block; } }
+
+header .links .links1, header .links .links2 { width: 50%; }
+
+@media screen and (max-width: 768px) { header .links .links1, header .links .links2 { width: 100%; padding: 5px 0; font-size: 0.8rem; } }
+
+header .links a { display: inline-block; width: 70%; margin: 0 5px; text-align: center; font-weight: bold; color: #fff; }
+
+header .links a span { font-size: 1.5rem; }
+
+@media screen and (max-width: 768px) { header .links a span { font-size: 1.3rem; } }
+
+#topScrollButton { background: linear-gradient(to bottom, #4a667e 80%, #e6e5e1); color: #fff; text-align: center; position: fixed; z-index: 10; right: 20px; bottom: 20px; width: 50px; height: 60px; }
+
+#topScrollButton:hover { cursor: pointer; }
+
+.section-search .title { background: #615250; margin: auto; color: #fff; padding: 10px; font-size: 1.5rem; }
+
+.section-search form .group { font-weight: bold; }
+
+@media screen and (max-width: 768px) { .section-search form .group { font-size: 0.8rem; } }
+
+.section-search form .group div { padding: 0 5px; }
+
+.section-search form .group div label { background: #fff; display: flex; justify-content: center; align-items: center; padding: 5px 0; }
+
+.section-search form .group div label img { width: 50px; height: 35px; }
+
+.section-search form input[type="radio"]:checked + label { background-color: #eb7631; color: #fff; }
+
+.section-search form button[type="submit"] { display: block; background: linear-gradient(to left, #eb7631 60%, #e6e5e1); width: 200px; height: 50px; margin: auto; outline: none; letter-spacing: 1rem; color: #fff; }
+
+.section-search form button[type="submit"] img { width: 20px; }
+
+.section-ranking .table { font-size: 0.9rem; }
+
+.section-ranking .table td, .section-ranking .table th { border-top: none; padding: 10px; }
+
+.section-ranking .table tr { border-bottom: 2px dotted #cecece; height: 80px; }
+
+.section-ranking .table img { width: 40px; }
+
+.section-ranking .table .freee-img { width: 80px; }
+
+.section-ranking .ranking1, .section-ranking .ranking2, .section-ranking .ranking3, .section-ranking .ranking4 { background: #fff; margin-bottom: 20px; }
+
+.section-ranking .ranking1 .content, .section-ranking .ranking2 .content, .section-ranking .ranking3 .content, .section-ranking .ranking4 .content { padding: 15px; }
+
+.section-ranking .ranking1__title, .section-ranking .ranking2__title, .section-ranking .ranking3__title, .section-ranking .ranking4__title { color: #fff; padding: 10px 0 10px 80px; position: relative; }
+
+.section-ranking .ranking1 .rate, .section-ranking .ranking2 .rate, .section-ranking .ranking3 .rate, .section-ranking .ranking4 .rate { text-align: center; font-size: 1.3rem; }
+
+.section-ranking .ranking1 .rate .fa-star, .section-ranking .ranking2 .rate .fa-star, .section-ranking .ranking3 .rate .fa-star, .section-ranking .ranking4 .rate .fa-star { background: linear-gradient(to top, #eb7631 30%, #fff); -webkit-background-clip: text; color: transparent; }
+
+.section-ranking .ranking1 .img-card, .section-ranking .ranking2 .img-card, .section-ranking .ranking3 .img-card, .section-ranking .ranking4 .img-card { width: 200px; margin: 10px auto; }
+
+.section-ranking .ranking1 .img-icon, .section-ranking .ranking2 .img-icon, .section-ranking .ranking3 .img-icon, .section-ranking .ranking4 .img-icon { width: 200px; margin: 20px auto; display: flex; justify-content: space-around; }
+
+.section-ranking .ranking1 .img-icon img, .section-ranking .ranking2 .img-icon img, .section-ranking .ranking3 .img-icon img, .section-ranking .ranking4 .img-icon img { width: 80px; }
+
+.section-ranking .ranking1 .info__title, .section-ranking .ranking2 .info__title, .section-ranking .ranking3 .info__title, .section-ranking .ranking4 .info__title { background: #e3dbce; padding: 10px 0 10px 10px; font-size: 1.3rem; }
+
+.section-ranking .ranking1 .button-group, .section-ranking .ranking2 .button-group, .section-ranking .ranking3 .button-group, .section-ranking .ranking4 .button-group { text-align: center; padding: 10px 30px; margin: 20px 0; }
+
+.section-ranking .ranking1 .button-group__detail, .section-ranking .ranking1 .button-group__official, .section-ranking .ranking2 .button-group__detail, .section-ranking .ranking2 .button-group__official, .section-ranking .ranking3 .button-group__detail, .section-ranking .ranking3 .button-group__official, .section-ranking .ranking4 .button-group__detail, .section-ranking .ranking4 .button-group__official { display: inline-block; padding: 10px 30px; margin: 10px 20px; }
+
+.section-ranking .ranking1 .button-group__detail:hover, .section-ranking .ranking1 .button-group__official:hover, .section-ranking .ranking2 .button-group__detail:hover, .section-ranking .ranking2 .button-group__official:hover, .section-ranking .ranking3 .button-group__detail:hover, .section-ranking .ranking3 .button-group__official:hover, .section-ranking .ranking4 .button-group__detail:hover, .section-ranking .ranking4 .button-group__official:hover { text-decoration: none; opacity: 0.8; }
+
+.section-ranking .ranking1 .button-group__detail, .section-ranking .ranking2 .button-group__detail, .section-ranking .ranking3 .button-group__detail, .section-ranking .ranking4 .button-group__detail { background: #e6e5e1; color: #333; }
+
+.section-ranking .ranking1 .button-group__official, .section-ranking .ranking2 .button-group__official, .section-ranking .ranking3 .button-group__official, .section-ranking .ranking4 .button-group__official { background: #85142e; color: #fff; }
+
+.section-ranking .ranking1 .feature__title, .section-ranking .ranking2 .feature__title, .section-ranking .ranking3 .feature__title, .section-ranking .ranking4 .feature__title { background: #e3dbce; padding: 5px 0; font-size: 1.3rem; }
+
+.section-ranking .ranking1 .feature__title:before, .section-ranking .ranking2 .feature__title:before, .section-ranking .ranking3 .feature__title:before, .section-ranking .ranking4 .feature__title:before { content: ''; background: url("../img/feature-icon.PNG"); background-size: contain; display: inline-block; width: 25px; height: 25px; margin: 0 10px; vertical-align: middle; }
+
+.section-ranking .ranking1 .feature__point, .section-ranking .ranking2 .feature__point, .section-ranking .ranking3 .feature__point, .section-ranking .ranking4 .feature__point { margin: 20px 0; background: #e3dbce; border: 5px solid #eb7631; padding: 3px; position: relative; }
+
+.section-ranking .ranking1 .feature__point .dot, .section-ranking .ranking2 .feature__point .dot, .section-ranking .ranking3 .feature__point .dot, .section-ranking .ranking4 .feature__point .dot { position: absolute; font-size: 0.5rem; color: #eb7631; }
+
+.section-ranking .ranking1 .feature__point .dot__top-left, .section-ranking .ranking2 .feature__point .dot__top-left, .section-ranking .ranking3 .feature__point .dot__top-left, .section-ranking .ranking4 .feature__point .dot__top-left { top: 10px; left: 10px; }
+
+.section-ranking .ranking1 .feature__point .dot__top-right, .section-ranking .ranking2 .feature__point .dot__top-right, .section-ranking .ranking3 .feature__point .dot__top-right, .section-ranking .ranking4 .feature__point .dot__top-right { top: 10px; right: 10px; }
+
+.section-ranking .ranking1 .feature__point .dot__bottom-left, .section-ranking .ranking2 .feature__point .dot__bottom-left, .section-ranking .ranking3 .feature__point .dot__bottom-left, .section-ranking .ranking4 .feature__point .dot__bottom-left { bottom: 10px; left: 10px; }
+
+.section-ranking .ranking1 .feature__point .dot__bottom-right, .section-ranking .ranking2 .feature__point .dot__bottom-right, .section-ranking .ranking3 .feature__point .dot__bottom-right, .section-ranking .ranking4 .feature__point .dot__bottom-right { bottom: 10px; right: 10px; }
+
+.section-ranking .ranking1 .feature__point__inside, .section-ranking .ranking2 .feature__point__inside, .section-ranking .ranking3 .feature__point__inside, .section-ranking .ranking4 .feature__point__inside { border: 2px solid #eb7631; padding: 30px; }
+
+@media screen and (max-width: 768px) { .section-ranking .ranking1 .feature__point__inside, .section-ranking .ranking2 .feature__point__inside, .section-ranking .ranking3 .feature__point__inside, .section-ranking .ranking4 .feature__point__inside { padding: 20px; } }
+
+.section-ranking .ranking1 .feature__point__list, .section-ranking .ranking2 .feature__point__list, .section-ranking .ranking3 .feature__point__list, .section-ranking .ranking4 .feature__point__list { list-style: none; padding: 0; }
+
+.section-ranking .ranking1 .feature__point__list li, .section-ranking .ranking2 .feature__point__list li, .section-ranking .ranking3 .feature__point__list li, .section-ranking .ranking4 .feature__point__list li { background: url("../img/point-icon.PNG") left top 5px no-repeat; background-size: 25px auto; padding: 5px 0 5px 35px; }
+
+.section-ranking .ranking1 .promotion, .section-ranking .ranking2 .promotion, .section-ranking .ranking3 .promotion, .section-ranking .ranking4 .promotion { background: #feea8f; position: relative; padding: 20px 50px; font-weight: bold; }
+
+@media screen and (max-width: 768px) { .section-ranking .ranking1 .promotion, .section-ranking .ranking2 .promotion, .section-ranking .ranking3 .promotion, .section-ranking .ranking4 .promotion { padding: 20px 30px; } }
+
+.section-ranking .ranking1 .promotion__title, .section-ranking .ranking2 .promotion__title, .section-ranking .ranking3 .promotion__title, .section-ranking .ranking4 .promotion__title { font-size: 1.5rem; font-weight: bold; }
+
+@media screen and (max-width: 768px) { .section-ranking .ranking1 .promotion__title, .section-ranking .ranking2 .promotion__title, .section-ranking .ranking3 .promotion__title, .section-ranking .ranking4 .promotion__title { font-size: 1.3rem; text-align: center; } }
+
+.section-ranking .ranking1 .promotion:before, .section-ranking .ranking2 .promotion:before, .section-ranking .ranking3 .promotion:before, .section-ranking .ranking4 .promotion:before { content: url("../img/promotion-icon.PNG"); position: absolute; top: -8px; left: -8px; }
+
+.section-ranking .ranking1__title { background: #957546; }
+
+.section-ranking .ranking1__title:before { content: "1"; color: #333; display: inline-block; position: absolute; top: 10px; left: 2px; text-align: center; background: url(../img/ranking-icon.png) no-repeat; background-size: contain; width: 60px; height: 60px; margin-right: 20px; }
+
+.section-ranking .ranking2__title { background: #898989; }
+
+.section-ranking .ranking2__title:before { content: "2"; color: #333; display: inline-block; position: absolute; top: 10px; left: 2px; text-align: center; background: url(../img/ranking-icon2.png) no-repeat; background-size: contain; width: 60px; height: 60px; margin-right: 20px; }
+
+.section-ranking .ranking3__title { background: #975022; }
+
+.section-ranking .ranking3__title:before { content: "3"; color: #333; display: inline-block; position: absolute; top: 10px; left: 2px; text-align: center; background: url(../img/ranking-icon3.png) no-repeat; background-size: contain; width: 60px; height: 60px; margin-right: 20px; }
+
+.section-ranking .ranking4__title { background: #615250; }
+
+.section-ranking .ranking4__title:before { content: "4"; color: #333; display: inline-block; position: absolute; top: 10px; left: 2px; text-align: center; background: url(../img/ranking-icon4.png) no-repeat; background-size: contain; width: 60px; height: 60px; margin-right: 20px; }
+
+.section-merit .title { background: #615250; margin: auto; color: #fff; padding: 10px; }
+
+.section-merit .title:before { content: ''; display: inline-block; background: url("../img/merit-icon.PNG"); width: 30px; height: 30px; background-size: contain; vertical-align: middle; margin-right: 10px; }
+
+.section-merit .merit1, .section-merit .merit2, .section-merit .merit3, .section-merit .merit4 { border-bottom: 2px solid #898989; padding: 15px 0; }
+
+.section-merit .merit1__title, .section-merit .merit2__title, .section-merit .merit3__title, .section-merit .merit4__title { font-weight: bold; font-size: 1.3rem; }
+
+.section-merit .merit1__title:before { content: "Point 01"; background: url("../img/merit1.png") no-repeat; color: #fff; background-size: contain; background-position: center; display: inline-block; padding: 10px; margin-right: 10px; }
+
+.section-merit .merit2__title:before { content: "Point 02"; background: url("../img/merit2.png") no-repeat; color: #fff; background-size: contain; background-position: center; display: inline-block; padding: 10px; margin-right: 10px; }
+
+.section-merit .merit3__title:before { content: "Point 03"; background: url("../img/merit3.png") no-repeat; color: #fff; background-size: contain; background-position: center; display: inline-block; padding: 10px; margin-right: 10px; }
+
+.section-merit .merit4 { border-bottom: none; }
+
+.section-merit .merit4__title:before { content: "Point 04"; background: url("../img/merit4.png") no-repeat; color: #fff; background-size: contain; background-position: center; display: inline-block; padding: 10px; margin-right: 10px; }
+
+.section-notes { background: #fff; font-size: 0.6rem; }
+
+.section-notes ul { margin: 0; }
+
+footer { background: #615250; text-align: center; height: 50px; line-height: 50px; }
+
+footer a { color: #fff; margin: 0 20px; }
+
+body { background: #e6e5e1; }
+
+body p { margin: 0; line-height: 2rem; }
+
+img { width: 100%; }
+
+.hidden { display: none; }
+
+.text-lg { font-size: 1.5rem; }
+
+.marker-orange { background: linear-gradient(transparent 60%, orange 60%); }
+
+ul { padding-left: 10px; list-style: inside; }
+
+ul li { margin-bottom: 5px; }
+
+.bg-gray-200 { background: #e6e5e1; }
+
+.bg-gray-400 { background: #898989; }
+
+.bg-gray-600 { background: #615250; }
+
+.bg-skin { background: #e3dbce; }
+
+.bg-purple-900 { background: #4a667e; }
+
+.bg-blue-300 { background: #9cabc8; }
+
+header, .section-banner, .section-notes, footer { width: 1000px; margin: auto; margin-bottom: 20px; }
+
+@media screen and (max-width: 768px) { header, .section-banner, .section-notes, footer { width: 100%; } }
+
+.section-notes, footer { margin-bottom: 0; }
+
+.section-search, .section-ranking, .section-merit { width: 750px; margin: auto; margin-bottom: 20px; }
+
+@media screen and (max-width: 768px) { .section-search, .section-ranking, .section-merit { width: 100%; } }
+/*# sourceMappingURL=styles.min.css.map */

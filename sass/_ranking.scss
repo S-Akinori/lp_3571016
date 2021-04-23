@@ -1,0 +1,219 @@
+@mixin ranking-icon ($content, $background)  {
+    content: $content;
+    color: #333;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    text-align: center;
+    background: $background no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.section-ranking {
+    .table {
+        font-size: 0.9rem;
+        td, th {
+            border-top: none;
+            padding: 10px;
+        }
+        tr {
+            border-bottom: 2px dotted #cecece;
+            height: 80px;
+        }
+        img {
+            width: 40px;
+        }
+        .freee-img {
+            width: 80px;
+        }
+    }
+    .ranking1, .ranking2, .ranking3, .ranking4 {
+        background: #fff;
+        margin-bottom: 20px;
+        .content {
+            padding: 15px;
+        }
+        &__title {
+            color: #fff;
+            padding: 10px 0 10px 80px;
+            position: relative;
+        }
+        
+        .rate {
+            text-align: center;
+            font-size: 1.3rem;
+            .fa-star {
+                background: linear-gradient(to top, $yellow-600 30%, #fff);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+        .img-card {
+            width: 200px;
+            margin: 10px auto;
+        }
+        .img-icon {
+            width: 200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+            img {
+                width: 80px;
+            }
+        }
+        .info {
+            &__title {
+                background: $skin;
+                padding: 10px 0 10px 10px;
+                font-size: 1.3rem;
+            }
+        }
+        .button-group {
+            text-align: center;
+            padding: 10px 30px;
+            margin: 20px 0;
+            &__detail, &__official {
+                display: inline-block;
+                padding: 10px 30px;
+                margin: 10px 20px;
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.8;
+                }
+            }
+            &__detail {
+                background: $gray-200;
+                color: #333;
+            }
+            &__official {
+                background: $red-900;
+                color: #fff;
+            }
+        }
+
+        .feature {
+            &__title {
+                background: $skin;
+                padding: 5px 0;
+                font-size: 1.3rem;
+                &:before {
+                    content: '';
+                    background: url('../img/feature-icon.PNG');
+                    background-size: contain;
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    margin: 0 10px;
+                    vertical-align: middle;
+                }
+            }
+            &__point {
+                margin: 20px 0;
+                background: $skin;
+                border: 5px solid $yellow-600;
+                padding: 3px;
+                position: relative;
+                .dot {
+                    position: absolute;
+                    font-size: 0.5rem;
+                    color: $yellow-600;
+                    &__top-left {
+                        top: 10px;
+                        left: 10px;
+                    }
+                    &__top-right {
+                        top: 10px;
+                        right: 10px;
+                    }
+                    &__bottom-left {
+                        bottom: 10px;
+                        left: 10px;
+                    }
+                    &__bottom-right {
+                        bottom: 10px;
+                        right: 10px;
+                    }
+                }
+                &__inside {
+                    border: 2px solid $yellow-600;
+                    padding: 30px;
+                    @include sp-view {
+                        padding:  20px;
+                    }
+                }
+
+                &__list {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        background: url('../img/point-icon.PNG') left top 5px no-repeat;
+                        background-size: 25px auto;
+                        padding: 5px 0 5px 35px;
+                    }
+                }
+            }
+        }
+        .promotion {
+            background: $yellow-200;
+            position: relative;
+            padding: 20px 50px;
+            font-weight: bold;
+            @include sp-view {
+                padding: 20px 30px;
+            }
+
+            &__title {
+                font-size: $text-lg;
+                font-weight: bold;
+                @include sp-view {
+                    font-size: $text-md;
+                    text-align: center;
+                }
+            }
+
+            &:before {
+                content: url('../img/promotion-icon.PNG');
+                position: absolute;
+                top: -8px;
+                left: -8px;
+            }
+        }
+    }
+    .ranking1 {
+        &__title {
+            background: $yellow-600-ranking;
+            &:before {
+                @include ranking-icon('1', url(../img/ranking-icon.png));
+            }
+        }
+    }
+    .ranking2 {
+        &__title {
+            background: $gray-400;
+            &:before {
+                @include ranking-icon('2', url(../img/ranking-icon2.png));
+            }
+        }
+        
+    }
+    .ranking3 {
+        &__title {
+            background: $yellow-700;
+            &:before {
+                @include ranking-icon('3', url(../img/ranking-icon3.png));
+            }
+        }
+    }
+    .ranking4 {
+        &__title {
+            background: $gray-600;
+            &:before {
+                @include ranking-icon('4', url(../img/ranking-icon4.png));
+            }
+        }
+    }
+}

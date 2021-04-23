@@ -1,0 +1,28 @@
+$purple-900: rgb(74, 102, 126);
+$blue-300: rgb(156, 171, 200);
+$gray-200: rgb(230, 229, 225);
+$gray-300: rgb(209, 213, 219);
+$gray-400: rgb(137, 137, 137);
+$gray-600: rgb(97, 82, 80);
+$yellow-600: rgb(235, 118, 49);
+$yellow-600-ranking: rgb(149, 117, 70);
+$red-900: rgb(133, 20, 46);
+$skin: rgb(227, 219, 206);
+$yellow-200: rgb(254, 234, 143);
+$yellow-700: rgb(151, 80, 34);
+$space-between-sections: 20px;
+
+$text-lg: 1.5rem;
+$text-md: 1.3rem;
+$text-sm: 0.8rem;
+
+$label-img-width: 50px;
+$label-img-height: $label-img-width * 0.70;
+
+$breakpoint-md: 768px;
+
+@mixin sp-view {
+    @media screen and (max-width: $breakpoint-md) {
+        @content
+    }
+}

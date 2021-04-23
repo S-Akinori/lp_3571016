@@ -1,0 +1,48 @@
+.section-search {
+    .title {
+        background: $gray-600;
+        margin: auto;
+        color: #fff;
+        padding: 10px;
+        font-size: $text-lg;
+    }
+    form {
+        .group {
+            font-weight: bold;
+            @include sp-view {
+                font-size: $text-sm;
+            }
+            div {
+                padding: 0 5px;
+                label {
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 0;
+                    img {
+                        width: $label-img-width;
+                        height: $label-img-height;
+                    }
+                }
+            }
+        }
+        input[type="radio"]:checked + label {
+            background-color: $yellow-600;
+            color: #fff;
+        }
+        button[type="submit"] {
+            display: block;
+            background: linear-gradient(to left, $yellow-600 60%, $gray-200);
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            outline: none;
+            letter-spacing: 1rem;
+            color: #fff;
+            img {
+                width: 20px;
+            }
+        }
+    }
+}

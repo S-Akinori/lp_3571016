@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'header';
+@import 'search';
+@import 'ranking';
+@import 'merit';
+@import 'banner';
+@import 'notes';
+@import 'footer';
+
+body {
+    background: $gray-200;
+    p {
+        margin: 0;
+        line-height: 2rem;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-lg {
+    font-size: $text-lg;
+}
+
+.marker-orange {
+    background: linear-gradient(transparent 60%, orange 60%);
+    
+}
+
+ul {
+    padding-left: 10px;
+    list-style: inside;
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+.bg-gray-200 {
+    background: $gray-200;
+}
+
+.bg-gray-400 {
+    background: $gray-400;
+}
+.bg-gray-600 {
+    background: $gray-600;
+}
+
+
+.bg-skin {
+    background: $skin;
+}
+
+.bg-purple-900 {
+    background: $purple-900;
+}
+
+.bg-blue-300 {
+    background: $blue-300;
+<<<<<<< HEAD
+}
+
+header, .section-banner, .section-notes, footer {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: $space-between-sections;
+    @include sp-view {
+        width: 100%;
+    }
+}
+
+.section-notes, footer {
+    margin-bottom: 0;
+}
+
+.section-search, .section-ranking, .section-merit {
+    width: 750px;
+    margin: auto;
+    margin-bottom: $space-between-sections;
+    @include sp-view {
+        width: 100%;
+    }
+=======
+>>>>>>> gh-pages
+}

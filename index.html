@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>法人・個人事業主向けカードランキング</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="img-container">
+                <img src="img/top.jpg" alt="Topバナー">
+                <a href="" class="top-link">一般カードはこちら <i class="fas fa-caret-right fa-lg"></i></a>
+            </div>
+            <div class="links">
+                <div class="d-flex links1">
+                    <a href="" class="bg-gray-600"><span>総合法人</span><br>ランキング</a>
+                    <a href="" class="bg-skin text-dark"><span>コスパ</span><br>ランキング</a>
+                    <a href="" class="bg-gray-400"><span>マイレージ</span><br>ランキング</a>
+                </div>
+                <div class="d-flex links2">
+                    <a href="" class="bg-purple-900"><span>審査</span><br>ランキング</a>
+                    <a href="" class="bg-blue-300 text-dark"><span>ETC</span><br>ランキング</a>
+                    <a href="" class="bg-gray-200 text-dark"><span>プラチナ</span><br>ランキング</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="topScrollButton">
+            <i class="fas fa-angle-up"></i><br>
+            TOP
+        </div>
+
+        <main>
+            <section class="section-search">
+                <div class="container">
+                    <h2 class="title"><i class="fas fa-search"></i> あなたに合う法人・ビジネスカードを検索</h2>
+                    <form class="my-3">
+                        <div class="row group align-items-center justify-content-center">
+                            <div class="col-md-2">
+                                ブランド
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="brand0" name="brand" class="hidden" value="jcb">
+                                <label for="brand0"><img src="img/jcb.png" alt="jcb"></label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="brand1" name="brand" class="hidden" value="american express">
+                                <label for="brand1"><img src="img/american-express.png" alt="americanexpress"></label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="brand2" name="brand" class="hidden" value="visa">
+                                <label for="brand2"><img src="img/visa.png" alt="visa"></label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="brand3" name="brand" class="hidden" value="mastercard">
+                                <label for="brand3"><img src="img/mastercard.PNG" alt="mastercard"></label>
+                            </div>
+                        </div>
+    
+                        <div class="row group align-items-center justify-content-center">
+                            <div class="col-md-2 font-weight-bold">
+                                ご利用限度額
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="max0" name="max" class="hidden" value="-200">
+                                <label for="max0">～200万</label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="max1" name="max" class="hidden" value="+200">
+                                <label for="max1">200万～</label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="max2" name="max" class="hidden" value="+500">
+                                <label for="max2">500万～</label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="max3" name="max" class="hidden" value="+1000">
+                                <label for="max3">1000万～</label>
+                            </div>
+                        </div>
+    
+                        <div class="row group align-items-center justify-content-center">
+                            <div class="col-md-2 font-weight-bold">
+                                年会費
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <input type="radio" id="price0" name="price" class="hidden" value="none">
+                                <label for="price0">指定なし</label>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <input type="radio" id="price1" name="price" class="hidden" value="free">
+                                <label for="price1">初年度無料</label>
+                            </div>
+                        </div>
+    
+                        <div class="row group align-items-center justify-content-center">
+                            <div class="col-md-2 font-weight-bold">
+                                マイレージ
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <input type="radio" id="mileage0" name="mileage" class="hidden" value="ana">
+                                <label for="mileage0">ANA</label>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <input type="radio" id="mileage1" name="mileage" class="hidden" value="jal">
+                                <label for="mileage1">JAL</label>
+                            </div>
+                        </div>
+    
+                        <div class="row group align-items-center justify-content-center">
+                            <div class="col-md-2 font-weight-bold">
+                                発行期間
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="period0" name="period" class="hidden" value="">
+                                <label for="period0">指定なし</label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="period1" name="period" class="hidden" value="3days">
+                                <label for="period1">最短3営業日</label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="period2" name="period" class="hidden" value="1week">
+                                <label for="period2">1週間程度</label>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <input type="radio" id="period3" name="period" class="hidden" value="2-3week">
+                                <label for="period3">2～3週間程度</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn"><img src="img/search-icon.png" alt=""> 検索</button>
+                    </form>
+                </div>
+            </section>
+    
+            <section class="section-ranking">
+                <div class="container">
+                    <div class="ranking1">
+                        <h2 class="ranking1__title">三井住友ビジネスカードfor Owners</h2>
+                        <div class="content">
+                            <div class="rate">
+                                <p>
+                                    総合評価
+                                    <span class="ml-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-lg">4.8</span>
+                                    </span>
+                                </p>
+                                <p>
+                                    世界No.1のVISAブランド！経営者・個人事業主の方に最適！<br>
+                                    <span class="font-weight-bold marker-orange">設立間もない企業でもご入会可能</span>で本人確認書だけで申込可能！
+                                </p>
+                                <div class="img-card">
+                                    <img src="img/credit-card.png" alt="credit card">
+                                </div>
+                                <div class="img-icon">
+                                    <img src="img/mastercard.PNG" alt="mastercard">
+                                    <img src="img/visa.png" alt="visa">
+                                </div>
+                            </div>
+        
+                            <div class="row info">
+                                <div class="col-md-6 px-1 info1">
+                                    <table class="table">
+                                        <h3 class="info__title">基本情報</h3>
+                                        <tbody>
+                                            <tr>
+                                                <th>年会費</th>
+                                                <td>
+                                                    初年度：無料<br>
+                                                    2年目以降:1250円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>追加カード年会費</th>
+                                                <td>
+                                                    初年度：400円(税別)<br>
+                                                    2年目以降:400円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ETCカード年会費</th>
+                                                <td>
+                                                    500円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ポイント還元率</th>
+                                                <td>
+                                                    0.5%～2.5%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>マイル還元率</th>
+                                                <td class="d-flex justify-content-between">
+                                                    0.30%
+                                                    <div>
+                                                        <img src="img/ana.png" alt="ANA">
+                                                        <img src="img/jal.png" alt="JAL">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 px-1 info2">
+                                    <h3 class="info__title">法人情報</h3>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th>ご利用限度額</th>
+                                                <td>
+                                                    10万円～150万円
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>申込資格</th>
+                                                <td>
+                                                    満20歳以上の法人代表者<br>
+                                                    個人事業主
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 個人事業主</th>
+                                                <td>
+                                                    個人事業主の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 法人代表者</th>
+                                                <td>
+                                                    法人代表者の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>会計ソフト自動連携</th>
+                                                <td>
+                                                    <img src="img/freee.png" alt="freee会計ソフト" class="freee-img" class="freee-img">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+    
+                            <div class="feature">
+                                <h3 class="feature__title">特徴</h3>
+                                <p class="px-4">
+                                    本人確認書類だけで作成できてお申込みも簡単！初年度年会費無料、2年目以降も年会費1,250円は変わらず、念願のANA・JALマイル交換が可能！さらに分割・リボ払いが可能になり資金繰りがもっと楽に。申込に法人の本人確認書類が不要なので、簡単かつスピーディーに申込できます。使えば使うほどお得で、ご利用金額に応じて翌年のポイントが最大50%アップ！煩わしい領収書管理や振り込みもビジネスカードでラクラク効率化できる！
+                                </p>
+    
+                                <div class="feature__point">
+                                    <div class="feature__point__inside">
+                                        <div class="dot dot__top-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__top-right"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-right"><i class="fas fa-circle"></i></div>
+                                        <h3 class="feature__point__title text-lg font-weight-bold">おすすめポイント</h3>
+                                        <ul class="feature__point__list">
+                                            <li>ビジネスカード利用はポイント・マイル獲得の大チャンス！<br>
+                                                貯めたANA・JALマイルで出張可能</li>
+                                            <li>格安年会費なのに旅行傷害保険は国内外問わず最大3,000万円の補償！<br>
+                                                一般ランクで一番高額な保険が付帯！</li>
+                                            <li>東海道・山陽新幹線予約サービス「EX予約」や宿泊予約サイト「じゃらんnet」が<br>
+                                                ビジネス限定価格でご利用可能</li>
+                                            <li>ApplePay・GooglePayにも対応しているので簡単スピード決済が可能</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="promotion">
+                                <h3 class="promotion__title">キャンペーン情報</h3>
+                                <ul>
+                                    <li>入会特典で最大7,000円分のJCBギフトカードプレゼント！</li>
+                                    <li>「弥生会計オンライン」が通常年間33,000円のところ初年度無料でご提供！</li>
+                                </ul>
+                            </div>
+
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ranking2">
+                        <h2 class="ranking2__title">JCB CARD Biz</h2>
+                        <div class="content">
+                            <div class="rate">
+                                <p>
+                                    総合評価
+                                    <span class="ml-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-lg">4.8</span>
+                                    </span>
+                                </p>
+                                <p>
+                                    世界No.1のVISAブランド！経営者・個人事業主の方に最適！<br>
+                                    <span class="font-weight-bold marker-orange">設立間もない企業でもご入会可能</span>で本人確認書だけで申込可能！
+                                </p>
+                                <div class="img-card">
+                                    <img src="img/credit-card.png" alt="credit card">
+                                </div>
+                                <div class="img-icon">
+                                    <img src="img/mastercard.PNG" alt="mastercard">
+                                    <img src="img/visa.png" alt="visa">
+                                </div>
+                            </div>
+        
+                            <div class="row info">
+                                <div class="col-md-6 px-1 info1">
+                                    <table class="table">
+                                        <h3 class="info__title">基本情報</h3>
+                                        <tbody>
+                                            <tr>
+                                                <th>年会費</th>
+                                                <td>
+                                                    初年度：無料<br>
+                                                    2年目以降:1250円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>追加カード年会費</th>
+                                                <td>
+                                                    初年度：400円(税別)<br>
+                                                    2年目以降:400円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ETCカード年会費</th>
+                                                <td>
+                                                    500円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ポイント還元率</th>
+                                                <td>
+                                                    0.5%～2.5%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>マイル還元率</th>
+                                                <td class="d-flex justify-content-between">
+                                                    0.30%
+                                                    <div>
+                                                        <img src="img/ana.png" alt="ANA">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 px-1 info2">
+                                    <h3 class="info__title">法人情報</h3>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th>ご利用限度額</th>
+                                                <td>
+                                                    10万円～150万円
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>申込資格</th>
+                                                <td>
+                                                    満20歳以上の法人代表者<br>
+                                                    個人事業主
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 個人事業主</th>
+                                                <td>
+                                                    個人事業主の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 法人代表者</th>
+                                                <td>
+                                                    法人代表者の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>会計ソフト自動連携</th>
+                                                <td>
+                                                    <img src="img/freee.png" alt="freee会計ソフト" class="freee-img">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+    
+                            <div class="feature">
+                                <h3 class="feature__title">特徴</h3>
+                                <p class="px-4">
+                                    本人確認書類だけで作成できてお申込みも簡単！初年度年会費無料、2年目以降も年会費1,250円は変わらず、念願のANA・JALマイル交換が可能！さらに分割・リボ払いが可能になり資金繰りがもっと楽に。申込に法人の本人確認書類が不要なので、簡単かつスピーディーに申込できます。使えば使うほどお得で、ご利用金額に応じて翌年のポイントが最大50%アップ！煩わしい領収書管理や振り込みもビジネスカードでラクラク効率化できる！
+                                </p>
+    
+                                <div class="feature__point">
+                                    <div class="feature__point__inside">
+                                        <div class="dot dot__top-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__top-right"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-right"><i class="fas fa-circle"></i></div>
+                                        <h3 class="feature__point__title text-lg font-weight-bold">おすすめポイント</h3>
+                                        <ul class="feature__point__list">
+                                            <li>ビジネスカード利用はポイント・マイル獲得の大チャンス！<br>
+                                                貯めたANA・JALマイルで出張可能</li>
+                                            <li>格安年会費なのに旅行傷害保険は国内外問わず最大3,000万円の補償！<br>
+                                                一般ランクで一番高額な保険が付帯！</li>
+                                            <li>東海道・山陽新幹線予約サービス「EX予約」や宿泊予約サイト「じゃらんnet」が<br>
+                                                ビジネス限定価格でご利用可能</li>
+                                            <li>ApplePay・GooglePayにも対応しているので簡単スピード決済が可能</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="promotion">
+                                <h3 class="promotion__title">キャンペーン情報</h3>
+                                <ul>
+                                    <li>入会特典で最大7,000円分のJCBギフトカードプレゼント！</li>
+                                    <li>「弥生会計オンライン」が通常年間33,000円のところ初年度無料でご提供！</li>
+                                </ul>
+                            </div>
+
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ranking3">
+                        <h2 class="ranking3__title">三井住友ビジネスカードfor Owners</h2>
+                        <div class="content">
+                            <div class="rate">
+                                <p>
+                                    総合評価
+                                    <span class="ml-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-lg">4.8</span>
+                                    </span>
+                                </p>
+                                <p>
+                                    世界No.1のVISAブランド！経営者・個人事業主の方に最適！<br>
+                                    <span class="font-weight-bold marker-orange">設立間もない企業でもご入会可能</span>で本人確認書だけで申込可能！
+                                </p>
+                                <div class="img-card">
+                                    <img src="img/credit-card.png" alt="credit card">
+                                </div>
+                                <div class="img-icon">
+                                    <img src="img/mastercard.PNG" alt="mastercard">
+                                    <img src="img/visa.png" alt="visa">
+                                </div>
+                            </div>
+        
+                            <div class="row info">
+                                <div class="col-md-6 px-1 info1">
+                                    <table class="table">
+                                        <h3 class="info__title">基本情報</h3>
+                                        <tbody>
+                                            <tr>
+                                                <th>年会費</th>
+                                                <td>
+                                                    初年度：無料<br>
+                                                    2年目以降:1250円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>追加カード年会費</th>
+                                                <td>
+                                                    初年度：400円(税別)<br>
+                                                    2年目以降:400円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ETCカード年会費</th>
+                                                <td>
+                                                    500円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ポイント還元率</th>
+                                                <td>
+                                                    0.5%～2.5%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>マイル還元率</th>
+                                                <td>
+                                                    0.30%
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 px-1 info2">
+                                    <h3 class="info__title">法人情報</h3>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th>ご利用限度額</th>
+                                                <td>
+                                                    10万円～150万円
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>申込資格</th>
+                                                <td>
+                                                    満20歳以上の法人代表者<br>
+                                                    個人事業主
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 個人事業主</th>
+                                                <td>
+                                                    個人事業主の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 法人代表者</th>
+                                                <td>
+                                                    法人代表者の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>会計ソフト自動連携</th>
+                                                <td>
+                                                    <img src="img/freee.png" alt="freee会計ソフト" class="freee-img">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+    
+                            <div class="feature">
+                                <h3 class="feature__title">特徴</h3>
+                                <p class="px-4">
+                                    本人確認書類だけで作成できてお申込みも簡単！初年度年会費無料、2年目以降も年会費1,250円は変わらず、念願のANA・JALマイル交換が可能！さらに分割・リボ払いが可能になり資金繰りがもっと楽に。申込に法人の本人確認書類が不要なので、簡単かつスピーディーに申込できます。使えば使うほどお得で、ご利用金額に応じて翌年のポイントが最大50%アップ！煩わしい領収書管理や振り込みもビジネスカードでラクラク効率化できる！
+                                </p>
+    
+                                <div class="feature__point">
+                                    <div class="feature__point__inside">
+                                        <div class="dot dot__top-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__top-right"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-right"><i class="fas fa-circle"></i></div>
+                                        <h3 class="feature__point__title text-lg font-weight-bold">おすすめポイント</h3>
+                                        <ul class="feature__point__list">
+                                            <li>ビジネスカード利用はポイント・マイル獲得の大チャンス！<br>
+                                                貯めたANA・JALマイルで出張可能</li>
+                                            <li>格安年会費なのに旅行傷害保険は国内外問わず最大3,000万円の補償！<br>
+                                                一般ランクで一番高額な保険が付帯！</li>
+                                            <li>東海道・山陽新幹線予約サービス「EX予約」や宿泊予約サイト「じゃらんnet」が<br>
+                                                ビジネス限定価格でご利用可能</li>
+                                            <li>ApplePay・GooglePayにも対応しているので簡単スピード決済が可能</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="promotion">
+                                <h3 class="promotion__title">キャンペーン情報</h3>
+                                <ul>
+                                    <li>入会特典で最大7,000円分のJCBギフトカードプレゼント！</li>
+                                    <li>「弥生会計オンライン」が通常年間33,000円のところ初年度無料でご提供！</li>
+                                </ul>
+                            </div>
+
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ranking4">
+                        <h2 class="ranking4__title">三井住友ビジネスカードfor Owners</h2>
+                        <div class="content">
+                            <div class="rate">
+                                <p>
+                                    総合評価
+                                    <span class="ml-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span class="text-lg">4.1</span>
+                                    </span>
+                                </p>
+                                <p>
+                                    世界No.1のVISAブランド！経営者・個人事業主の方に最適！<br>
+                                    <span class="font-weight-bold marker-orange">設立間もない企業でもご入会可能</span>で本人確認書だけで申込可能！
+                                </p>
+                                <div class="img-card">
+                                    <img src="img/credit-card.png" alt="credit card">
+                                </div>
+                                <div class="img-icon">
+                                    <img src="img/mastercard.PNG" alt="mastercard">
+                                    <img src="img/visa.png" alt="visa">
+                                </div>
+                            </div>
+        
+                            <div class="row info">
+                                <div class="col-md-6 px-1 info1">
+                                    <table class="table">
+                                        <h3 class="info__title">基本情報</h3>
+                                        <tbody>
+                                            <tr>
+                                                <th>年会費</th>
+                                                <td>
+                                                    初年度：無料<br>
+                                                    2年目以降:1250円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>追加カード年会費</th>
+                                                <td>
+                                                    初年度：400円(税別)<br>
+                                                    2年目以降:400円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ETCカード年会費</th>
+                                                <td>
+                                                    500円(税別)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>ポイント還元率</th>
+                                                <td>
+                                                    0.5%～2.5%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>マイル還元率</th>
+                                                <td class="d-flex justify-content-between">
+                                                    0.30%
+                                                    <div>
+                                                        <img src="img/ana.png" alt="ANA">
+                                                        <img src="img/jal.png" alt="JAL">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 px-1 info2">
+                                    <h3 class="info__title">法人情報</h3>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th>ご利用限度額</th>
+                                                <td>
+                                                    10万円～150万円
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>申込資格</th>
+                                                <td>
+                                                    満20歳以上の法人代表者<br>
+                                                    個人事業主
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 個人事業主</th>
+                                                <td>
+                                                    個人事業主の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>必要書類 法人代表者</th>
+                                                <td>
+                                                    法人代表者の本人確認書類
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>会計ソフト自動連携</th>
+                                                <td>
+                                                    <img src="img/freee.png" alt="freee会計ソフト" class="freee-img">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+    
+                            <div class="feature">
+                                <h3 class="feature__title">特徴</h3>
+                                <p class="px-4">
+                                    本人確認書類だけで作成できてお申込みも簡単！初年度年会費無料、2年目以降も年会費1,250円は変わらず、念願のANA・JALマイル交換が可能！さらに分割・リボ払いが可能になり資金繰りがもっと楽に。申込に法人の本人確認書類が不要なので、簡単かつスピーディーに申込できます。使えば使うほどお得で、ご利用金額に応じて翌年のポイントが最大50%アップ！煩わしい領収書管理や振り込みもビジネスカードでラクラク効率化できる！
+                                </p>
+    
+                                <div class="feature__point">
+                                    <div class="feature__point__inside">
+                                        <div class="dot dot__top-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__top-right"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-left"><i class="fas fa-circle"></i></div>
+                                        <div class="dot dot__bottom-right"><i class="fas fa-circle"></i></div>
+                                        <h3 class="feature__point__title text-lg font-weight-bold">おすすめポイント</h3>
+                                        <ul class="feature__point__list">
+                                            <li>ビジネスカード利用はポイント・マイル獲得の大チャンス！<br>
+                                                貯めたANA・JALマイルで出張可能</li>
+                                            <li>格安年会費なのに旅行傷害保険は国内外問わず最大3,000万円の補償！<br>
+                                                一般ランクで一番高額な保険が付帯！</li>
+                                            <li>東海道・山陽新幹線予約サービス「EX予約」や宿泊予約サイト「じゃらんnet」が<br>
+                                                ビジネス限定価格でご利用可能</li>
+                                            <li>ApplePay・GooglePayにも対応しているので簡単スピード決済が可能</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="promotion">
+                                <h3 class="promotion__title">キャンペーン情報</h3>
+                                <ul>
+                                    <li>入会特典で最大7,000円分のJCBギフトカードプレゼント！</li>
+                                    <li>「弥生会計オンライン」が通常年間33,000円のところ初年度無料でご提供！</li>
+                                </ul>
+                            </div>
+
+                            <div class="button-group">
+                                <a href="" class="button-group__detail">詳細を見る</a>
+                                <a href="" class="button-group__official">公式サイトを見る</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-merit">
+                <div class="container">
+                    <h2 class="title">法人カードを利用する4つのメリット</h2>
+                    <div class="row align-items-center merit1">
+                        <div class="col-md-8">
+                            <h3 class="merit1__title">経理業務効率化</h3>
+                            <p>法人カードでの支払は、全て「カード利用明細」に毎月記載され、いつ・どこで・いくら使ったのか分かります。また多くの場合、利用明細データは経理・会計ソフトに取り込めるため、人的な入力ミスを防ぐことができる上、経理業務効率化につながります。</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/merit1-img.png" alt="経理業務効率化">
+                        </div>
+                    </div>
+                    <div class="row align-items-center merit2">
+                        <div class="col-md-8">
+                            <h3 class="merit2__title">経費精算不要</h3>
+                            <p>出張時の交通費や宿泊費、取引先との接待費を従業員が立て替えて精算することがありますが、法人カードを社員に支給しカード払いにすれば、小口現金精算業務を軽減できます。これで従業員への経費精算漏れはなくなり、経理処理が楽になります。</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/merit2-img.png" alt="経費精算不要">
+                        </div>
+                    </div>
+                    <div class="row align-items-center merit3">
+                        <div class="col-md-8">
+                            <h3 class="merit3__title">ポイント・マイル還元</h3>
+                            <p>豪華空港ラウンジが無料利用できる「プライオリティ・パス」や旅行保険最大1億円補償は出張時にも安心！一流レストラン利用での特典や、有名ゴルフ場を優先枠で予約できる特典を使えば、ワンランク上の接待が可能です。</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/merit3-img.png" alt="ポイント・マイル還元">
+                        </div>
+                    </div>
+                    <div class="row align-items-center merit4">
+                        <div class="col-md-8">
+                            <h3 class="merit4__title">カード会員優待特典</h3>
+                            <p>法人カードでの支払は、全て「カード利用明細」に毎月記載され、いつ・どこで・いくら使ったのか分かります。また多くの場合、利用明細データは経理・会計ソフトに取り込めるため、人的な入力ミスを防ぐことができる上、経理業務効率化につながります。</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/merit4-img.png" alt="カード会員優待特典">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-banner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 p-1">
+                            <a href=""><img src="img/banner-ranking.jpg" alt="総合人気ランキング"></a>
+                        </div>
+                        <div class="col-4 p-1">
+                            <a href=""><img src="img/banner-pointmiles.jpg" alt="高ポイント・マイル"></a>
+                        </div>
+                        <div class="col-4 p-1">
+                            <a href=""><img src="img/banner-costperformance.jpg" alt="高コスパ法人カード"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 p-1">
+                            <a href=""><img src="img/banner-screening.jpg" alt="審査不安な方はコチラ"></a>
+                        </div>
+                        <div class="col-4 p-1">
+                            <a href=""><img src="img/banner-etc.jpg" alt="ETC付帯法人カード"></a>
+                        </div>
+                        <div class="col-4 p-1">
+                            <a href=""><img src="img/banner-ptcard.jpg" alt="プラチナカード"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-notes">
+                <div>
+                    <p>ランキング調査結果</p>
+                    <p>当サイトのランキングは下記の「クレジットカード利用についての意識調査」の結果を元にランキングを表示しております。調査概要は下記のとおりです。</p>
+                    
+                    <ul>
+                        <li>調査目的：クレジットカード利用に関する意識調査</li>
+                        <li>調査実施期間：2018年1月18日～随時取得</li>
+                        <li>調査対象：クレジットカードを所持している、または過去に所持していた方</li>
+                        <li>調査人数：427人</li>
+                        <li>調査方法：インターネット上でのアンケート調査</li>
+                        <li>調査対象地域：日本国内</li>
+                        <li>母集団：クレジットカードを所有している、または過去に所持していたインターネット利用者</li>
+                    </ul>
+    
+                    <p>調査結果（一部抜粋）は<a href="">こちら</a></p>
+                </div>
+                <div>
+                    <p>【当サイトに関する注意事項】</p>
+                    <ul>
+                        <li>当サイトで提供する商品の情報にあたっては、十分な注意を払って提供しておりますが、情報の正確性その他一切の事項についてを保証するものではありません。</li>
+                        <li>お申込みにあたっては、提携事業者のサイトをご確認の上、ご自身でご判断ください。</li>
+                        <li>当社では各商品のサービス内容及び入会特典等に関するご質問にはお答えできかねます。提携事業者に直接お問い合わせください。</li>
+                        <li>本ページのいかなる情報により生じた損失に対しても当社は責任を負いません。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>
+                <a href="">運営会社</a>
+                <a href="">面積事項</a>
+                <a href="">プライバシーポリシー</a>
+            </footer>
+        </main>
+
+        <!-- jQuery and JS bundle w/ Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

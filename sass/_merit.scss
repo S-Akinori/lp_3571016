@@ -1,0 +1,66 @@
+@mixin merit-icon($content, $background) {
+    content: $content;
+    background: $background no-repeat;
+    color: #fff;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.section-merit {
+    .title {
+        background: $gray-600;
+        margin: auto;
+        color: #fff;
+        padding: 10px;
+        &:before {
+            content: '';
+            display: inline-block;
+            background: url('../img/merit-icon.PNG');
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+    .merit1, .merit2, .merit3, .merit4 {
+        border-bottom: 2px solid $gray-400;
+        padding: 15px 0;
+        &__title {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    }
+    .merit1 {
+        &__title {
+            &:before {
+                @include merit-icon('Point 01', url('../img/merit1.png') )
+            }
+        }
+    }
+    .merit2 {
+        &__title {
+            &:before {
+                @include merit-icon('Point 02', url('../img/merit2.png') )
+            }
+        }
+    }
+    .merit3 {
+        &__title {
+            &:before {
+                @include merit-icon('Point 03', url('../img/merit3.png') )
+            }
+        }
+    }
+    .merit4 {
+        border-bottom: none;
+        &__title {
+            &:before {
+                @include merit-icon('Point 04', url('../img/merit4.png') )
+            }
+        }
+    }
+}
