@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header { position: relative; }
 
 header .top-link { position: absolute; top: 8px; right: 15px; color: #fff; }
@@ -20,6 +21,8 @@ header .links a span { font-size: 1.5rem; }
 
 #topScrollButton:hover { cursor: pointer; }
 
+.section-search { font-family: "Mincho", "游明朝", sans-serif; }
+
 .section-search .title { background: #615250; margin: auto; color: #fff; padding: 10px; font-size: 1.5rem; }
 
 .section-search form .group { font-weight: bold; }
@@ -34,7 +37,7 @@ header .links a span { font-size: 1.5rem; }
 
 .section-search form input[type="radio"]:checked + label { background-color: #eb7631; color: #fff; }
 
-.section-search form button[type="submit"] { display: block; background: linear-gradient(to left, #eb7631 60%, #e6e5e1); width: 200px; height: 50px; margin: auto; outline: none; letter-spacing: 1rem; color: #fff; }
+.section-search form button[type="submit"] { display: block; background: linear-gradient(to left, #eb7631 60%, #e6e5e1); width: 200px; height: 50px; margin: auto; outline: none; letter-spacing: 1rem; color: #fff; border: none; }
 
 .section-search form button[type="submit"] img { width: 20px; }
 
@@ -52,7 +55,7 @@ header .links a span { font-size: 1.5rem; }
 
 .section-ranking .ranking1 .content, .section-ranking .ranking2 .content, .section-ranking .ranking3 .content, .section-ranking .ranking4 .content { padding: 15px; }
 
-.section-ranking .ranking1__title, .section-ranking .ranking2__title, .section-ranking .ranking3__title, .section-ranking .ranking4__title { color: #fff; padding: 10px 0 10px 80px; position: relative; }
+.section-ranking .ranking1__title, .section-ranking .ranking2__title, .section-ranking .ranking3__title, .section-ranking .ranking4__title { font-family: "Mincho", "游明朝", sans-serif; color: #fff; padding: 10px 0 10px 80px; position: relative; }
 
 .section-ranking .ranking1 .rate, .section-ranking .ranking2 .rate, .section-ranking .ranking3 .rate, .section-ranking .ranking4 .rate { text-align: center; font-size: 1.3rem; }
 
@@ -64,9 +67,9 @@ header .links a span { font-size: 1.5rem; }
 
 .section-ranking .ranking1 .img-icon img, .section-ranking .ranking2 .img-icon img, .section-ranking .ranking3 .img-icon img, .section-ranking .ranking4 .img-icon img { width: 80px; }
 
-.section-ranking .ranking1 .info__title, .section-ranking .ranking2 .info__title, .section-ranking .ranking3 .info__title, .section-ranking .ranking4 .info__title { background: #e3dbce; padding: 10px 0 10px 10px; font-size: 1.3rem; }
+.section-ranking .ranking1 .info__title, .section-ranking .ranking2 .info__title, .section-ranking .ranking3 .info__title, .section-ranking .ranking4 .info__title { font-family: "Mincho", "游明朝"; background: #e3dbce; padding: 10px 0 10px 10px; font-size: 1.3rem; }
 
-.section-ranking .ranking1 .button-group, .section-ranking .ranking2 .button-group, .section-ranking .ranking3 .button-group, .section-ranking .ranking4 .button-group { text-align: center; padding: 10px 30px; margin: 20px 0; }
+.section-ranking .ranking1 .button-group, .section-ranking .ranking2 .button-group, .section-ranking .ranking3 .button-group, .section-ranking .ranking4 .button-group { font-family: "Mincho", "游明朝"; text-align: center; padding: 10px 30px; margin: 20px 0; }
 
 .section-ranking .ranking1 .button-group__detail, .section-ranking .ranking1 .button-group__official, .section-ranking .ranking2 .button-group__detail, .section-ranking .ranking2 .button-group__official, .section-ranking .ranking3 .button-group__detail, .section-ranking .ranking3 .button-group__official, .section-ranking .ranking4 .button-group__detail, .section-ranking .ranking4 .button-group__official { display: inline-block; padding: 10px 30px; margin: 10px 20px; }
 
@@ -76,11 +79,13 @@ header .links a span { font-size: 1.5rem; }
 
 .section-ranking .ranking1 .button-group__official, .section-ranking .ranking2 .button-group__official, .section-ranking .ranking3 .button-group__official, .section-ranking .ranking4 .button-group__official { background: #85142e; color: #fff; }
 
-.section-ranking .ranking1 .feature__title, .section-ranking .ranking2 .feature__title, .section-ranking .ranking3 .feature__title, .section-ranking .ranking4 .feature__title { background: #e3dbce; padding: 5px 0; font-size: 1.3rem; }
+.section-ranking .ranking1 .feature__title, .section-ranking .ranking2 .feature__title, .section-ranking .ranking3 .feature__title, .section-ranking .ranking4 .feature__title { font-family: "Mincho", "游明朝"; background: #e3dbce; padding: 5px 0; font-size: 1.3rem; }
 
 .section-ranking .ranking1 .feature__title:before, .section-ranking .ranking2 .feature__title:before, .section-ranking .ranking3 .feature__title:before, .section-ranking .ranking4 .feature__title:before { content: ''; background: url("../img/feature-icon.PNG"); background-size: contain; display: inline-block; width: 25px; height: 25px; margin: 0 10px; vertical-align: middle; }
 
 .section-ranking .ranking1 .feature__point, .section-ranking .ranking2 .feature__point, .section-ranking .ranking3 .feature__point, .section-ranking .ranking4 .feature__point { margin: 20px 0; background: #e3dbce; border: 5px solid #eb7631; padding: 3px; position: relative; }
+
+.section-ranking .ranking1 .feature__point__title, .section-ranking .ranking2 .feature__point__title, .section-ranking .ranking3 .feature__point__title, .section-ranking .ranking4 .feature__point__title { font-family: "Mincho", "游明朝"; }
 
 .section-ranking .ranking1 .feature__point .dot, .section-ranking .ranking2 .feature__point .dot, .section-ranking .ranking3 .feature__point .dot, .section-ranking .ranking4 .feature__point .dot { position: absolute; font-size: 0.5rem; color: #eb7631; }
 
@@ -104,7 +109,7 @@ header .links a span { font-size: 1.5rem; }
 
 @media screen and (max-width: 768px) { .section-ranking .ranking1 .promotion, .section-ranking .ranking2 .promotion, .section-ranking .ranking3 .promotion, .section-ranking .ranking4 .promotion { padding: 20px 30px; } }
 
-.section-ranking .ranking1 .promotion__title, .section-ranking .ranking2 .promotion__title, .section-ranking .ranking3 .promotion__title, .section-ranking .ranking4 .promotion__title { font-size: 1.5rem; font-weight: bold; }
+.section-ranking .ranking1 .promotion__title, .section-ranking .ranking2 .promotion__title, .section-ranking .ranking3 .promotion__title, .section-ranking .ranking4 .promotion__title { font-family: "Mincho", "游明朝"; font-size: 1.5rem; font-weight: bold; }
 
 @media screen and (max-width: 768px) { .section-ranking .ranking1 .promotion__title, .section-ranking .ranking2 .promotion__title, .section-ranking .ranking3 .promotion__title, .section-ranking .ranking4 .promotion__title { font-size: 1.3rem; text-align: center; } }
 
@@ -126,13 +131,13 @@ header .links a span { font-size: 1.5rem; }
 
 .section-ranking .ranking4__title:before { content: "4"; color: #333; display: inline-block; position: absolute; top: 10px; left: 2px; text-align: center; background: url(../img/ranking-icon4.png) no-repeat; background-size: contain; width: 60px; height: 60px; margin-right: 20px; }
 
-.section-merit .title { background: #615250; margin: auto; color: #fff; padding: 10px; }
+.section-merit .title { font-family: "Mincho", "游明朝", sans-serif; background: #615250; margin: auto; color: #fff; padding: 10px; }
 
 .section-merit .title:before { content: ''; display: inline-block; background: url("../img/merit-icon.PNG"); width: 30px; height: 30px; background-size: contain; vertical-align: middle; margin-right: 10px; }
 
 .section-merit .merit1, .section-merit .merit2, .section-merit .merit3, .section-merit .merit4 { border-bottom: 2px solid #898989; padding: 15px 0; }
 
-.section-merit .merit1__title, .section-merit .merit2__title, .section-merit .merit3__title, .section-merit .merit4__title { font-weight: bold; font-size: 1.3rem; }
+.section-merit .merit1__title, .section-merit .merit2__title, .section-merit .merit3__title, .section-merit .merit4__title { font-family: "Mincho", "游明朝"; font-weight: bold; font-size: 1.3rem; }
 
 .section-merit .merit1__title:before { content: "Point 01"; background: url("../img/merit1.png") no-repeat; color: #fff; background-size: contain; background-position: center; display: inline-block; padding: 10px; margin-right: 10px; }
 
@@ -152,7 +157,7 @@ footer { background: #615250; text-align: center; height: 50px; line-height: 50p
 
 footer a { color: #fff; margin: 0 20px; }
 
-body { background: #e6e5e1; }
+body { font-family: "Yu Gothic", "游ゴシック", sans-serif; background: #e6e5e1; font-weight: 500; }
 
 body p { margin: 0; line-height: 2rem; }
 
@@ -167,6 +172,10 @@ img { width: 100%; }
 ul { padding-left: 10px; list-style: inside; }
 
 ul li { margin-bottom: 5px; }
+
+.font-gothic { font-family: "Yu Gothic", "游ゴシック", sans-serif; }
+
+.font-mincho { font-family: "Mincho", "游明朝", sans-serif; }
 
 .bg-gray-200 { background: #e6e5e1; }
 

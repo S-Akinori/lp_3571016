@@ -38,6 +38,7 @@
             padding: 15px;
         }
         &__title {
+            font-family: $font_mincho, sans-serif;
             color: #fff;
             padding: 10px 0 10px 80px;
             position: relative;
@@ -67,12 +68,14 @@
         }
         .info {
             &__title {
+                font-family: $font_mincho;
                 background: $skin;
                 padding: 10px 0 10px 10px;
                 font-size: 1.3rem;
             }
         }
         .button-group {
+            font-family: $font_mincho;
             text-align: center;
             padding: 10px 30px;
             margin: 20px 0;
@@ -97,6 +100,7 @@
 
         .feature {
             &__title {
+                font-family: $font_mincho;
                 background: $skin;
                 padding: 5px 0;
                 font-size: 1.3rem;
@@ -117,6 +121,9 @@
                 border: 5px solid $yellow-600;
                 padding: 3px;
                 position: relative;
+                &__title {
+                    font-family: $font_mincho;
+                }
                 .dot {
                     position: absolute;
                     font-size: 0.5rem;
@@ -167,6 +174,7 @@
             }
 
             &__title {
+                font-family: $font_mincho;
                 font-size: $text-lg;
                 font-weight: bold;
                 @include sp-view {

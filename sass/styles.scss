@@ -8,7 +8,9 @@
 @import 'footer';
 
 body {
+    font-family: $font_gothic, sans-serif;
     background: $gray-200;
+    font-weight: 500;
     p {
         margin: 0;
         line-height: 2rem;
@@ -40,6 +42,14 @@ ul {
     }
 }
 
+.font-gothic {
+    font-family: $font_gothic, sans-serif;
+}
+
+.font-mincho {
+    font-family: $font_mincho, sans-serif;
+}
+
 .bg-gray-200 {
     background: $gray-200;
 }
@@ -62,7 +72,6 @@ ul {
 
 .bg-blue-300 {
     background: $blue-300;
-<<<<<<< HEAD
 }
 
 header, .section-banner, .section-notes, footer {
@@ -85,6 +94,4 @@ header, .section-banner, .section-notes, footer {
     @include sp-view {
         width: 100%;
     }
-=======
->>>>>>> gh-pages
 }

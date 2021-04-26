@@ -1,4 +1,5 @@
 .section-search {
+    font-family: $font_mincho, sans-serif;
     .title {
         background: $gray-600;
         margin: auto;
@@ -40,6 +41,7 @@
             outline: none;
             letter-spacing: 1rem;
             color: #fff;
+            border: none;
             img {
                 width: 20px;
             }

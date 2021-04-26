@@ -11,6 +11,7 @@
 
 .section-merit {
     .title {
+        font-family: $font_mincho, sans-serif;
         background: $gray-600;
         margin: auto;
         color: #fff;
@@ -30,6 +31,7 @@
         border-bottom: 2px solid $gray-400;
         padding: 15px 0;
         &__title {
+            font-family: $font_mincho;
             font-weight: bold;
             font-size: 1.3rem;
         }
