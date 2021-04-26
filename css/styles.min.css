@@ -37,7 +37,7 @@ header .links a span { font-size: 1.5rem; }
 
 .section-search form input[type="radio"]:checked + label { background-color: #eb7631; color: #fff; }
 
-.section-search form button[type="submit"] { display: block; background: linear-gradient(to left, #eb7631 60%, #e6e5e1); width: 200px; height: 50px; margin: auto; outline: none; letter-spacing: 1rem; color: #fff; border: none; }
+.section-search form button[type="submit"] { display: block; background: linear-gradient(to left, #eb7631, #f0b99a); width: 200px; height: 50px; margin: auto; outline: none; letter-spacing: 1rem; color: #fff; border: none; }
 
 .section-search form button[type="submit"] img { width: 20px; }
 
